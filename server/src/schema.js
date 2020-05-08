@@ -13,11 +13,6 @@ const typeDefs = gql`
     login(email: String): String # login token
   }
 
-  type Mission {
-    # ... with rest of schema
-    missionPatch(mission: String, size: PatchSize): String
-  }
-
   type LaunchConnection {
     cursor: String!
     hasMore: Boolean!
@@ -52,7 +47,7 @@ const typeDefs = gql`
 
   type Mission {
     name: String
-    missionPatch(size: PatchSize): String
+    missionPatch(mission: String, size: PatchSize): String
   }
 
   enum PatchSize {
