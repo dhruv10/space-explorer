@@ -13,6 +13,11 @@ const typeDefs = gql`
     login(email: String): String # login token
   }
 
+  type Mission {
+    # ... with rest of schema
+    missionPatch(mission: String, size: PatchSize): String
+  }
+
   type LaunchConnection {
     cursor: String!
     hasMore: Boolean!
