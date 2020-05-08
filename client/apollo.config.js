@@ -1,6 +1,9 @@
 module.exports = {
-    client: {
-      name: 'Space Explorer Dhruv [web]',
-      service: 'space-explorer-dhruv',
-    },
-  };
+  client: {
+    name: 'space-explorer-dhruv',
+    // service: 'space-explorer-dhruv',
+  },
+  service: {
+    name: 'space-explorer-dhruv',
+  },
+};
